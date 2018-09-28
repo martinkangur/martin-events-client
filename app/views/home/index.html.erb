@@ -1,3 +1,7 @@
 <h1>Welcome!</h1>
 <p>We sell best event tickets!</p>
 
+<% @events.each do |e| %>
+  <%= e.name %> <br>
+
+<% end %>
