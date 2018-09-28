@@ -7,7 +7,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @event.try(:category).try(:name) %>
+  <%= link_to(@event.try(:category).try(:name), category_path(@event.try(:category))) %>
 </p>
 
 <p>

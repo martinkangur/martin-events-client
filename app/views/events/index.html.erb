@@ -21,7 +21,7 @@
       <tr>
         <td><%= event.name %></td>
         <td><%= event.short_description %></td>
-        <td><%= event.try(:category).try(:name) %></td>
+        <td><%= link_to(event.try(:category).try(:name), category_path(event.try(:category))) %></td>
         <td><%= event.price %></td>
         <td><%= event.date %></td>
         <td><%= event.location %></td>
