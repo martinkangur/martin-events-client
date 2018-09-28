@@ -7,7 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Short description</th>
-      <th>Long description</th>
+      <th>Category</th>
       <th>Price</th>
       <th>Date</th>
       <th>Location</th>
@@ -21,7 +21,7 @@
       <tr>
         <td><%= event.name %></td>
         <td><%= event.short_description %></td>
-        <td><%= event.long_description %></td>
+        <td><%= event.try(:category).try(:name) %></td>
         <td><%= event.price %></td>
         <td><%= event.date %></td>
         <td><%= event.location %></td>

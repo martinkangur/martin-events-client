@@ -52,9 +52,11 @@
   </div>
 
   <div class="field">
-    <%= form.label :outdoor %>
-    <%= form.check_box :outdoor %>
+    <%= form.label :category_id %>
+    <%= form.collection_select(:category_id, Category.all, :id, :name) %>
   </div>
+
+
 
   <div class="actions">
     <%= form.submit class: 'btn btn-success' %>
