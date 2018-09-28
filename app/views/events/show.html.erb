@@ -7,7 +7,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @event.category.name %>
+  <%= @event.try(:category).try(:name) %>
 </p>
 
 <p>
