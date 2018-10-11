@@ -33,8 +33,16 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-
   config.action_mailer.perform_caching = false
+
+  
+#
+  #Server	smtp.sendgrid.net
+  #Ports	
+  #25, 587	(for unencrypted/TLS connections)
+  #465	(for SSL connections)
+  #Username	apikey
+  #Password	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
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
