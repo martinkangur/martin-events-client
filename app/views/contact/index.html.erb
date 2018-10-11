@@ -1,0 +1,21 @@
+<h1>Contact</h1>
+
+<form>
+  <div class="form-group">
+    <label for="full_name">Full name</label>
+    <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Enter full name">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea name="content" class="form-control" id="content"></textarea>
+  </div>
+<%= recaptcha_tags %>
+  <input type="submit" class="btn btn-primary" value="Send email">
+
+</form>
