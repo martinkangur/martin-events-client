@@ -16,8 +16,8 @@ class Message
 
     {
       user: ENV['PUSHOVER_USER'],
-      token: ENV['PUSHOVER_TOKEN'];
-      title: 'My message',
+      token: ENV['PUSHOVER_TOKEN'],
+      title: 'Martin Kangur',
       message: 'Message from my app'
     }
   end
